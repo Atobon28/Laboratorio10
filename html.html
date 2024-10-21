@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestor de Tareas</h1>
+        <div class="task-input">
+            <input type="text" id="new-task" placeholder="¿Qué tienes por hacer hoy?..." />
+            <button onclick="agregarTarea()">Agregar tarea</button>
+        </div>
+
+        <div class="columns">
+            <div class="column" id="pendientes">
+                <h2>Pendientes</h2>
+                <div class="task-list" id="pendientes-list"></div>
+            </div>
+
+            <div class="column" id="haciendo">
+                <h2>Haciendo</h2>
+                <div class="task-list" id="haciendo-list"></div>
+            </div>
+
+            <div class="column" id="completada">
+                <h2>Completada</h2>
+                <div class="task-list" id="completada-list"></div>
+                <button class="clear-btn" onclick="limpiarCompletada()">Limpiar Completada</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js.js"></script>
+</body>
+</html>
